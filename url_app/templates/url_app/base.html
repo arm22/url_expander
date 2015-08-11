@@ -1,0 +1,30 @@
+{% load staticfiles %}
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>URL Expander</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    </head>
+    <body>
+
+    <body>
+	    <div class="page-header">
+	    	<a href="{% url "post_new" %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+	        <h1><a href="/">URL Expander</a></h1>
+	    </div>
+	    <div class="content container">
+	        <div class="row">
+	            <div class="col-md-8">
+	            {% block content %}
+	            {% endblock %}
+	            </div>
+	        </div>
+	    </div>
+	</body>
+</html>
