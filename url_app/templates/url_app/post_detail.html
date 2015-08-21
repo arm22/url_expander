@@ -6,6 +6,7 @@
         <p>Short URL: {{ post.org_url }}</p>
         <p>Expanded URL: {{ post.fin_url }}</p>
 		<p>Response Code: {{ post.resp_code }}</p>
+		<p>Image URL: <a href={{ post.pic }}>{{ post.pic }}</a></p>
 		<button><a href={% url "post_delete" pk=post.pk %}>Delete</a></button>
     </div>
 {% endblock %}
